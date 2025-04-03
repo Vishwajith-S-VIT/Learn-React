@@ -12,9 +12,9 @@ export function App1(){
     }
     return(
         <div>
-            <p style={{ fontSize: `${fsize}px` }}>This is App1</p>
-            <button onClick={() => setFsize(fsize + 1)}>Increase Font Size</button>
-            <button onClick={() => {decreaseFontSize()}}>Decrease Font Size</button>
+            <p style={{ fontSize: `${fsize}px` }}>This is <span style={{fontStyle:"italic", color:"blue", backgroundColor:"darkgrey"}}>App1</span></p>
+            <button onClick={() => setFsize(fsize + 1)}>Increase Font Size</button> &emsp;
+            <button onClick={() => {decreaseFontSize()}}>Decrease Font Size</button> &emsp;
             <button onClick={() => setFsize(16)}>Reset Font Size</button>
         </div>
     )

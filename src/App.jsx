@@ -1,16 +1,34 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { App1 } from "./App1";
-import { App2 } from "./App2";
+import { GetScreenDimensions } from "./GetScreenDimensions";
 
 function Home() {
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>React Router DOM Testing</h1>
-      <nav style={{ marginBottom: "20px" }}>
-        <Link to="/App1">App1</Link>&emsp;|&emsp;
-        <Link to="/App2">App2</Link>
-      </nav>
+      <h1>Links to all my projects on here</h1>
+      <table cellPadding={5} cellSpacing={0} border={2} align="center">
+        <thead>
+          <tr>
+            <th>Project Description</th>
+            <th>Link to the corresponding project.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dynamically increase or reduce Font Size using useState() hook.</td>
+            <td>
+              <Link to="/App1">App1</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>Get the viewport dimensions and actual dimensions of your screen</td>
+            <td>
+              <Link to="/GetScreenDimensions">GetScreenDimensions</Link>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
@@ -21,7 +39,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/App1" element={<App1 />} />
-        <Route path="/App2" element={<App2 />} />
+        <Route path="/GetScreenDimensions" element={<GetScreenDimensions />} />
         <Route path="*" element={<h2>Page Not Found</h2>} />
       </Routes>
     </Router>
