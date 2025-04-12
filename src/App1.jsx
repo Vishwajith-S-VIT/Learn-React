@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 export function App1(){
     const [fsize, setFsize] = useState(16);
@@ -15,7 +16,8 @@ export function App1(){
             <p style={{ fontSize: `${fsize}px` }}>This is <span style={{fontStyle:"italic", color:"blue", backgroundColor:"darkgrey"}}>App1</span></p>
             <button onClick={() => setFsize(fsize + 1)}>Increase Font Size</button> &emsp;
             <button onClick={() => {decreaseFontSize()}}>Decrease Font Size</button> &emsp;
-            <button onClick={() => setFsize(16)}>Reset Font Size</button>
+            <button onClick={() => setFsize(16)}>Reset Font Size</button> <br/> <br/>
+            <Link to={"/"}><button>Go back to homepage</button></Link>
         </div>
     )
 }

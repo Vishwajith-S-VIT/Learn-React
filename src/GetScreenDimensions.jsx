@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const GetScreenDimensions = () => {
     const [viewportDimensions, setViewportDimensions] = useState({
@@ -29,6 +30,7 @@ export const GetScreenDimensions = () => {
                 <strong>Actual Screen Dimensions:</strong> {window.screen.width} x{" "}
                 {window.screen.height}
             </p>
+            <Link to={"/"}><button>Go back to homepage</button></Link>
         </div>
     );
 };

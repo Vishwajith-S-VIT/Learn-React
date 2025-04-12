@@ -18,13 +18,13 @@ function Home() {
           <tr>
             <td>Dynamically increase or reduce Font Size using useState() hook.</td>
             <td>
-              <Link to="/App1">App1</Link>
+              <Link to="/App1"><button>App1</button></Link>
             </td>
           </tr>
           <tr>
             <td>Get the viewport dimensions and actual dimensions of your screen</td>
             <td>
-              <Link to="/GetScreenDimensions">GetScreenDimensions</Link>
+              <Link to="/GetScreenDimensions"><button>GetScreenDimensions</button></Link>
             </td>
           </tr>
         </tbody>
