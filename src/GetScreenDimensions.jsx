@@ -30,7 +30,7 @@ export const GetScreenDimensions = () => {
                 <strong>Actual Screen Dimensions:</strong> {window.screen.width} x{" "}
                 {window.screen.height}
             </p>
-            <Link to={"/"}><button>Go back to homepage</button></Link>
+            <Link to={"/"}><button>Go Back to Homepage</button></Link>
         </div>
     );
 };

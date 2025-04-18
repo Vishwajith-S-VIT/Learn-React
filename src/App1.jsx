@@ -17,7 +17,7 @@ export function App1(){
             <button onClick={() => setFsize(fsize + 1)}>Increase Font Size</button> &emsp;
             <button onClick={() => {decreaseFontSize()}}>Decrease Font Size</button> &emsp;
             <button onClick={() => setFsize(16)}>Reset Font Size</button> <br/> <br/>
-            <Link to={"/"}><button>Go back to homepage</button></Link>
+            <Link to={"/"}><button>Go Back to Homepage</button></Link>
         </div>
     )
 }
